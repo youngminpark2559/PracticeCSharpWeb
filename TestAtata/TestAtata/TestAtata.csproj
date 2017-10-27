@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Atata, Version=0.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Console\packages\Atata.0.15.0\lib\net45\Atata.dll</HintPath>
+    </Reference>
+    <Reference Include="Atata.WebDriverExtras, Version=0.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Console\packages\Atata.WebDriverExtras.0.13.0\lib\net45\Atata.WebDriverExtras.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\Console\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -103,6 +109,12 @@
       <Private>True</Private>
       <HintPath>..\..\Console\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Console\packages\Selenium.WebDriver.3.6.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Console\packages\Selenium.Support.3.6.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\..\Console\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -149,6 +161,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\Console\packages\WebDriver.ChromeDriver.win32.2.33.0.0\content\chromedriver.exe">
+      <Link>chromedriver.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
